@@ -96,23 +96,23 @@ function draw() {
             // }
 
 }
-    
-  drawSprites();
-}
 text("score:" + score,270,30);
 // creating continous ballons
-var select_balloon=Math.round(random(1,1));
+var select_balloon=Math.round(random(1,4));
 
 if(World.frameCount % 100 == 0) {
   if(select_balloon == 1) {
     redBalloon();
   } else if (select_balloon == 2){
-    greenBalloon
+    greenBalloon();
   } else if (select_balloon == 3){
-    blueBalloon
+    blueBalloon();
   } else{
-    pinkBalloon
+    pinkBalloon();
   }
+}
+   
+  drawSprites();
 }
 
 // Creating  arrows for bow
